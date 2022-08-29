@@ -1,9 +1,9 @@
-## Start the application
+** Start the application
 - cd to the folder and run 'npm start' to start the application.
 
-## Select a zone
+** Select a zone
 - Click on a zone to select it and display the settings.
 
-## Change the lighting settings
+** Change the lighting settings
 - You can use the inputs to switch the lights, change the dimness and the color.
 - After changing the settings, click on SET to apply them.

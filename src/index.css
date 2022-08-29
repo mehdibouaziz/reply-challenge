@@ -1,13 +1,95 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(204, 226, 255);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+
+/* ------------ HEADER ------------- */
+
+.header-div {
+  background-color: rgba(0, 1, 39, 0.733);
+
+  margin: 0;
+  height: 50px;
+  width: 100vw;
+  color: white;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-div h1 {
+  margin: 0 0 0 20px;
+
+  font-size: 1.5em;
+}
+
+#user-avatar {
+  margin: 0 20px 0 0;
+}
+
+
+/* ------------ PLAN VIEW ------------- */
+
+.plan-div {
+  margin: auto;
+  height: 60vh;
+  max-width: 600px;
+  
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/src/images/plan.png);
+  background-size: contain;
+}
+
+.plan-grid{
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: 36% 63%;
+  grid-template-rows: 7% 32% 50% 10%;
+  gap: 10px;
+}
+
+.plan-bathroom{
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+}
+.room:hover{
+  border: solid 3px rgb(80, 141, 255);
+}
+
+.plan-bedroom{
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+}
+
+.plan-livingroom{
+  grid-row: 2 / 4;
+  grid-column: 2 / 3;
+}
+
+.plan-settings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  margin: 5px;
+  border: none;
+  background-color: rgb(59, 120, 211);
+  color: white;
+  border-radius: 2px;
+  padding: 3px 5px;
 }
